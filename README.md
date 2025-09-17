@@ -1,2 +1,2 @@
-# lucas_cv
+# Lucas: projetos
 Espaço pessoal para compartilhar projetos 🌟
