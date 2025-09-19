@@ -1,6 +1,20 @@
-# Lucas Fainblat: projetos
+# Início
+  
+Prazer, eu sou o <span style="position: relative; cursor: pointer;">
+  <strong id="lucas-hover" style="color: #fdc04eff;">Lucas Fainblat</strong>!
+  <img src="https://github.com/user-attachments/assets/f7d17132-5741-4ba4-b7e5-04567ee709f5" 
+       alt="foto_lucas_fainblat" 
+       style="display:none; position:absolute; left:273%; top: calc(50% - 150px); width:300px; max-width:none; border:1px solid #ddd; background:#fff; z-index:999;"
+       id="foto-preview"/>
+</span>
 
-Prazer, eu sou o *Lucas Fainblat*!
+<script>
+  // Exibe/oculta a imagem ao passar o mouse
+  const span = document.getElementById('lucas-hover');
+  const img = document.getElementById('foto-preview');
+  span.onmouseover = () => img.style.display = 'block';
+  span.onmouseout  = () => img.style.display = 'none';
+</script>
 
 ## 🔧 O que eu faço?
 Sou **EPPGG** no **Governo de Minas Gerais**. Meu histórico:
@@ -22,6 +36,17 @@ Pesquiso **Políticas Públicas** e estudo **Ciência Política**, com foco em *
 - 2024-2027 (conclusão estimada): Doutorado em Ciência Política pela **Universidade Federal de Minas Gerais - UFMG**
 - 2022-2024: [Mestrado em Ciência Política](https://repositorio.ufmg.br/items/2b5d7e5a-052a-4ed8-9bb6-004e6cef8bd6) pela **UFMG**
 - 2015-2016: [Especialização em Políticas Públicas](https://repositorio.ufmg.br/items/38fe0825-a260-4586-a425-0a0d22b36502) pela **UFMG**
+- 2008-2011: [Bacharelado em Administração Pública](https://drive.google.com/file/d/1PEOnUQqomcOlZDhZZO3UcgjIvEBBPv2E/view?usp=sharing) pela **Fundação João Pinheiro - FJP**
+
+Acesse meu [currículo Lattes](http://lattes.cnpq.br/1511692902967161).
+
+### 👨🏻‍🏫 Experiência docente
+
+| Período | Instituição | Curso | Disciplina | Carga horária | Links |
+| ------- | ----------- | ----- | ---------- | ------------- | ----- |
+| 2024-2  | FJP         | Graduação em Administração Pública | Ônus administrativos: o Caronte entre o cidadão e seus direitos | 30h | [Ementa](https://drive.google.com/file/d/1TcihelHycBf-9fT-Txt-t0Ognn_0YCLz/view?usp=sharing)<br>[Aulas](https://kumu.io/fainblat/fjp-202501#onus-administrativos) |
+| 2024-1  | FJP         | Graduação em Administração Pública | Quem entra e quem fica de fora - reprodução de desigualdades na implementação de políticas públicas | 30h | [Ementa](https://drive.google.com/file/d/1Cvuyu2KxzrRIJzxdTdsEKAP_-L1ZpbAL/view?usp=sharing)<br>[Aulas](https://slides.com/lucasfainblat/desigualdades) |
+| 2023-2  | FJP         | Graduação em Administração Pública | Inovação de Impacto: soluções *no code* e *low code* para entraves comuns aos órgãos e entidades do Estado | 30h | [Ementa](https://drive.google.com/file/d/1jgNdQWoFCHCaVDK5o_dhaG_tyh7Rq5fO/view?usp=sharing)<br>[Aulas](https://drive.google.com/file/d/1-n8rZjmgdTnNvnlGTaJKyeL2ASDemWGT/view?usp=sharing) |
 
 ---
 
@@ -41,9 +66,9 @@ Ler, cantar, viajar e curtir minha família. Mas nem só de curtição vive o su
 ### 📻 Radialista
 - 2014-2017: produtor e apresentador do programa **Blablablá do Fainblat**, que foi ao ar semanalmente pela **Rádio Inconfidência**
 
-### 🐓 Atleticano:
+### 🐓 Galô!
 - 2013: personagem no documentário [O Dia do Galo](https://www.youtube.com/watch?v=65Iz_GKbhHk), de Cris Azzi (versão longa [aqui](https://www.youtube.com/watch?v=-O3ZcP7Pwns))
 
 ---
 
-> **P.S.:** Eu de-tes-to redes sociais! Por isso você não vai me encontrar em nenhuma – pelo menos nenhum perfil verdadeiro 😅
+**P.S.:** Eu de-tes-to redes sociais! Por isso você não vai me encontrar em nenhuma – pelo menos nenhum perfil verdadeiro 😅
