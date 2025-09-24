@@ -1,0 +1,31 @@
+# Aulas Trilha Dev
+🔗 [Curso Trilha Dev](https://trilhadev.planejamento.mg.gov.br/)
+🐈‍⬛ [GitHub Repo](https://github.com/splor-mg/trilha-dev)
+
+---
+
+## Dia 4: comandos e terminal
+🔗 [Link no curso](https://trilhadev.planejamento.mg.gov.br/aulas/dia_04/dia_04/)
+
+### Aula 09: Falando várias línguas
+🔗 [Vídeo da Aula 09](https://www.youtube.com/watch?v=UWptjGLSuVg)
+
+### Aula 10: Comandos de terminal
+🔗 [Vídeo da Aula 10](https://www.youtube.com/watch?v=UZR13IQBYB4)
+
+#### ✍🏻 Anotações
+
+| Comando | O que faz                                   | Exemplo         |
+|---------|---------------------------------------------|-----------------|
+| pwd     | Mostra o caminho completo do diretório atual| pwd             |
+| ls      | Lista os arquivos e pastas                  | ls -la             |
+| cd ..    | Volta para a pasta anterior                 | cd ..            |
+| cd      | Entra em um diretório                       | cd blog         |
+| mkdir   | Cria uma nova pasta                         | mkdir blog      |
+| touch   | Cria um novo arquivo                        | touch post1.md  |
+| rm      | Remove arquivos ou pastas                   | rm post1.md     |
+
+- Comandos --help trazem a documentação sobre o respectivo comando.
+
+---
+
