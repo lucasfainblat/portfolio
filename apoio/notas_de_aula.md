@@ -179,3 +179,10 @@ Mais comandos:
 | Untracked                | Arquivo novo que o Git ainda não monitora. Use git add para começar a rastrear. |
 | Modified                 | Arquivo já conhecido pelo Git, mas que foi alterado. Ainda não pronto para salvar. |
 | Staged / Ready to commit | Arquivo marcado com git add para ser incluído no próximo "snapshot".        |
+
+- git init: inicia o git no repositório
+- git status: retorna status do commit atual (changes not staged; untracked...)
+
+
+
+
