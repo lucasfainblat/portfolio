@@ -37,6 +37,8 @@ theme:
     - navigation.instant.prefetch # Página pretendida começa a carregar quando usuário passa cursor pelo link
     - navigation.instant.preview # Inclui pré-visualizações para todos os níveis de títulos markdown sob links do tipo ``` [título](#){ data preview } ```
     - navigation.tracking # Atualiza a barra de endereços automaticamente em nível de âncora
+    - navigation.sections # Mostra seções de cada página no menu à esquerda
+  # - navigation.expand # Usuário expande ou recolhe seções
     - navigation.tabs # Adicona abas com as principais seções do site
     - navigation.path # Acrescenta "migalhas de pão" ao topo de cada página, facilitando a navegação
     - navigation.indexes # Incorpora o documento à seção, diminunido a redundância de index à esquerda. Necessário organizar um index.md a cada seção.
@@ -46,7 +48,7 @@ theme:
     - search.highlight # Destaca nas páginas o valor que o usuário buscou
     - search.share # Permite ao usuário copiar o endereço da busca feita
     - navigation.footer # Adiciona rodapé personalizado
-    #- navigation.tabs.sticky # Fixa as abas para não desaparecerem com a rolagem
+  # - navigation.tabs.sticky # Fixa as abas para não desaparecerem com a rolagem
 
 markdown_extensions:
   - attr_list
@@ -56,6 +58,7 @@ markdown_extensions:
 
 plugins:
   - search
+  - awesome-nav # https://lukasgeiter.github.io/mkdocs-awesome-nav/
   - social: # Gera um cartão para compartilhamento da url
       cards_layout_options:
         title: Lucas Fainblat - portfólio # Para diferenciar o que vai escrito como título do cartão do nome da página
