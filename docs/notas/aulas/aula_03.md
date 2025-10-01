@@ -9,3 +9,12 @@ toc_depth: 4
 - Repositórios servem para organizar projetos
 - Criado o repositório [lucas_projetos](https://github.com/lucasfainblat/lucas_projetos)
 
+### Instalando o poetry e outras dependências
+Poetry
+```pipx install poetry```
+
+MKDOCS
+```poetry add mkdocs```
+
+Material for MkDocs
+```poetry add mkdocs-material```

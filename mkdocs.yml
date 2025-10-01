@@ -21,7 +21,7 @@ theme:
       icon: material/brightness-7
       name: Mudar para modo escuro
     primary: black
-    accent: amber
+    accent: deep
 
     # Paleta de cores: modo escuro
   - media: "(prefers-color-scheme: dark)"

@@ -1,18 +1,13 @@
----
-toc_depth: 4
----
-
-# Aula 12: preliminares .gitignore
-🔗 [Vídeo](https://www.youtube.com/watch?v=7oLz1wQJWMw)
+# Aula 12 - Colaboração e código aberto
+🔗 [Youtube](https://www.youtube.com/watch?v=x8eA_b-pwUY&embeds_referring_euri=https%3A%2F%2Ftrilhadev.planejamento.mg.gov.br%2F&source_ve_path=OTY3MTQ)
 
 ## Anotações
-- Incluir um arquivo `.gitignore` já que isso não foi feito no início.
-   - Criar o arquivo
-   - Remover o que não queremos que o git monitore
-   - Commitar
+Desde o diretório raiz:
 
-### Criando o arquivo
-No diretório raiz:
-```touch .gitignore```
+Estruturando o diretório para criação do site:
+```poetry run mkdocs build```
 
-Utilizar o [gitignore.io](gitignore.io) para gerar automaticamente o arquivo.
+Publicando o site:
+```poetry run mkdocs gh-deploy```
+
+Site publicado em: https://lucasfainblat.github.io/portfolio/
