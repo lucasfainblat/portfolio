@@ -180,8 +180,17 @@ Mais comandos:
 | Modified                 | Arquivo já conhecido pelo Git, mas que foi alterado. Ainda não pronto para salvar. |
 | Staged / Ready to commit | Arquivo marcado com git add para ser incluído no próximo "snapshot".        |
 
-- git init: inicia o git no repositório
-- git status: retorna status do commit atual (changes not staged; untracked...)
+- `git init`: inicia o git no repositório
+- `git status`: retorna status do commit atual (changes not staged; untracked...)
+- `git add ../pasta/arquivo.extensão`: marca arquivo para "foto" do git
+- `git commit`: "sobe" a foto atual
+- `git commit -m "mensagem de commit"`: parâmetro pra já inserir "o que foi feito naquele commit"
+- `git log`: mostra os commits atuais, quem fez, o que foi feito, seus códigos etc. Para sair, pressionar `q`
+- `git push origin main`: "sobe" as alterações pro <origin main> (github, main branch)
+- `git pull origin main`: "baixa" as alterações do último push pra sua máquina virtual. Assim você garante estar trabalhando sobre a versão mais atual do projeto.
+
+> **💡Dica!** Faça _commits_ para mudanças pequenas, ou seja, que sejam inteligíveis no log.
+
 
 
 
