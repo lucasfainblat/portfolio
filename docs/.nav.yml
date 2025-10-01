@@ -1,6 +1,4 @@
 nav:
   - Início: index.md
-  - Notas de aula:
-    - Anotações: notas/index.md
-    - Backlog: notas/backlog.md
-
+  - Notas de aula: notas
+    

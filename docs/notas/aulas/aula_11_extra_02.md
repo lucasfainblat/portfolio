@@ -1,0 +1,3 @@
+# Aula 11 - Extra 02: mergulhando no Git
+- Qual a Lógica por trás do Git? É um processo concebido pelo Linus Torvalds.
+   - Os arquivos, no trabalho colaborativo, passam a funcionar com "checkins" e "checkouts" num sistema distribuído. Cada arquivo é "tirado" da gaveta e alterado por um ou mais usuários ao mesmo tempo, sendo que a comparação e mesclagem dos documentos é compatibilizada automaticamente conquanto não haja alterações da linha do tempo sobre o mesmo "ramo", ou "branch".
