@@ -25,6 +25,7 @@ toc_depth: 4
 - `git push origin main`: "sobe" as alterações pro <origin main> (github, main branch)
 - `git pull origin main`: "baixa" as alterações do último push pra sua máquina virtual. Assim você garante estar trabalhando sobre a versão mais atual do projeto.
 - `git checkout <hash>`: movimenta-se até o projeto à altura sinalizada pelo identificador <hash>
+- `git checkout -b <nome do branch>`: criar e ir a um novo `branch`
 - `git switch <branch>`: muda de "ramo", permitindo navegar entre versões ativas do projeto.
 - `git switch -c <nome do branch>`: cria um ramo para "ativar" a versão <hash> que está sendo visitada
 
