@@ -58,7 +58,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - awesome-nav # https://lukasgeiter.github.io/mkdocs-awesome-nav/
   - blog # cria seção de blog
   - social: # Gera um cartão para compartilhamento da url
       cards_layout_options:
