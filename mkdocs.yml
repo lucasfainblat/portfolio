@@ -1,17 +1,41 @@
-site_name: Lucas Fainblat - Portfólio
-site_url: https://lucasfainblat.github.io/portfolio
+# Site
+site_name: Lucas Fainblat - Currículo
+site_author: Lucas Fainblat
+docs_dir: docs 
+repo_url: https://github.com/lucasfainblat/portfolio
+repo_name: lucasfainblat/portfolio
 
+copyright: >
+  Copyright © - <span id='currentYear'></span> Lucas Fainblat
+
+# Material for MkDocs
 theme:
   name: material
-
   icon:
     logo: simple/gamejolt # Mais em https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#logo-icon-bundled
-
+  favicon: simple/gamejolt
   font:
     text: Funnel Sans
     code: Google Sans Code
-
   language: pt-BR
+
+  features:
+    - content.code.copy # Permite copiar os blocos de código
+    - navigation.footer # Adiciona rodapé personalizado
+    - navigation.indexes # Incorpora o documento à seção, diminunido a redundância de index à esquerda. Necessário organizar um index.md a cada seção.
+    - navigation.instant # Página carrega de uma vezada
+    - navigation.instant.prefetch # Página pretendida começa a carregar quando usuário passa cursor pelo link
+    - navigation.instant.preview # Inclui pré-visualizações para todos os níveis de títulos markdown sob links do tipo ``` [título](#){ data preview } ```
+    - navigation.path # Acrescenta "migalhas de pão" ao topo de cada página, facilitando a navegação
+    - navigation.sections # Mostra seções de cada página no menu à esquerda
+    - navigation.tabs # Adicona abas com as principais seções do site
+    - navigation.tabs.sticky # Fixa as abas para não desaparecerem com a rolagem
+    - navigation.top # Botão de "voltar ao topo" aparece quando usuário rola a página pra cima
+    - navigation.tracking # Atualiza a barra de endereços automaticamente em nível de âncora
+    - search.highlight # Destaca nas páginas o valor que o usuário buscou
+    - search.share # Permite ao usuário copiar o endereço da busca feita
+    - search.suggest # Completa a busca com sugestão
+    - toc.follow # Rola a página pra âncora selecionada na tabela de conteúdo
 
   palette:
     # Paleta de cores: modo claro
@@ -32,37 +56,42 @@ theme:
     primary: black
     accent: amber
 
-  features:
-    - navigation.instant # Página carrega de uma vezada
-    - navigation.instant.prefetch # Página pretendida começa a carregar quando usuário passa cursor pelo link
-    - navigation.instant.preview # Inclui pré-visualizações para todos os níveis de títulos markdown sob links do tipo ``` [título](#){ data preview } ```
-    - navigation.tracking # Atualiza a barra de endereços automaticamente em nível de âncora
-    - navigation.sections # Mostra seções de cada página no menu à esquerda
-  # - navigation.expand # Usuário expande ou recolhe seções
-    - navigation.tabs # Adicona abas com as principais seções do site
-    - navigation.path # Acrescenta "migalhas de pão" ao topo de cada página, facilitando a navegação
-    - navigation.indexes # Incorpora o documento à seção, diminunido a redundância de index à esquerda. Necessário organizar um index.md a cada seção.
-    - toc.follow # Rola a página pra âncora selecionada na tabela de conteúdo
-    - navigation.top # Botão de "voltar ao topo" aparece quando usuário rola a página pra cima
-    - search.suggest # Completa a busca com sugestão
-    - search.highlight # Destaca nas páginas o valor que o usuário buscou
-    - search.share # Permite ao usuário copiar o endereço da busca feita
-    - navigation.footer # Adiciona rodapé personalizado
-  # - navigation.tabs.sticky # Fixa as abas para não desaparecerem com a rolagem
+  nav:
+     - Início: index.md
+     - Portfólio:
+        - portfolio/index.md
+        - Profissional:
+           - portfolio/profissional.md
+        - Acadêmico:
+           - portfolio/academico.md
+     - Sobre mim: sobre/sobre.md
+
+plugins:
+  - search
+  - social: # Gera um cartão para compartilhamento da url
+      cards_layout_options:
+        title: Lucas Fainblat - portfólio # Para diferenciar o que vai escrito como título do cartão do nome da página
+        description: Currículo, projetos e trajetória profissional e acadêmica
 
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-plugins:
-  - search
-  - blog # cria seção de blog
-  - social: # Gera um cartão para compartilhamento da url
-      cards_layout_options:
-        title: Lucas Fainblat - portfólio # Para diferenciar o que vai escrito como título do cartão do nome da página
-        description: Acesse meu currículo, conheça minha trajetória profissional e acadêmica, meus projetos e - por que não? - um pouquinho da minha vida pessoal.
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - footnotes
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.magiclink
+  - admonition
+  - toc:
+      permalink: true
 
 extra:
     social: # Ícones com links para contato
@@ -72,14 +101,7 @@ extra:
         link: https://wa.link/vrc3xo
       - icon: fontawesome/brands/github
         link: https://github.com/lucasfainblat
-# consent: # Mensagem de cookies
- #   title: 🤔 Aviso de cookies
-#    description: >- 
-    #  Os cookies são usados aqui para identificar suas visitas e preferências, 
-    #  além de medir a efetividade do site identificando se os usuários estão
-     # encontrando o que procuram. Quando você aceita nossos cookies, ajuda
-     # a melhorar nosso site! 😉
 
-
-
-
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - assets/javascripts/mermaid-init.js
